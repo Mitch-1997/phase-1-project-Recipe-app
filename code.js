@@ -21,7 +21,6 @@ userBtn.addEventListener('click', () => {
                     <a class="view-button" href="#">Get Recipe</a>
                 </div>
                 <p class="object-data">${meal.idMeal}</p>
-                <p class="object-data">${meal.strInstructions}</p>
             </div>
             `
         })
