@@ -112,6 +112,44 @@ section{
     line-height: 2rem;
     letter-spacing: 0.05rem;
  }
+ .popup.overlay {
+   top: 0px;
+   width: 100vw;
+   left: 0px;
+   position: fixed;
+   background: orangered;
+   z-index: 1;
+   height: 100vh;
+   display: none;
+ }
+ .popup.close-button {
+   top:20px;
+   width:30px;
+   position: absolute;
+   background: blueviolet;
+   right: 20px;
+   font-size: 25px;
+   height: 30px;
+   font-weight: 500;
+   line-height: 30px;
+   border-radius: 50%;
+   text-align: center;
+   
+ }
+ .popup.content{
+   top: 49%;
+   background: black;
+   position: absolute;
+   left: 49%;
+   transform: translate(-50, -50);
+   padding: 20px;
+   height: 220px;
+   width: 450px;
+   z-index: 2;
+   box-sizing: border-box;
+   text-align: center;
+ }
+ 
 
 
 

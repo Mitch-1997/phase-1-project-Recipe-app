@@ -6,6 +6,8 @@ let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${user}`
 let userBtn = document.getElementById('btn')
 let object = document.getElementById('object');
 
+
+findResult.addEventListener('click', getMeal);
 userBtn.addEventListener('click', () => {
     fetch(url)
     .then(resp => resp.json())
@@ -29,7 +31,13 @@ userBtn.addEventListener('click', () => {
     })
            
          })
-            
+            function getMeal(e){
+                e.preventDefault();
+                if(e.target.classList.contains('view-button')){
+                    let mealItem = e.target.parentElement;
+                    console.log(mealItem);
+                }
+            }
     
 
  
