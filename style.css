@@ -74,7 +74,7 @@ section{
     width: 100%;
  }
  .object{
-    border-radius: 8px;
+    border-radius: 4px;
     width: 100%;
     background-color: white;
     overflow: hidden;
@@ -112,7 +112,7 @@ section{
     line-height: 2rem;
     letter-spacing: 0.05rem;
  }
- .popup.overlay {
+ /* .popup.overlay {
    top: 0px;
    width: 100vw;
    left: 0px;
@@ -148,8 +148,22 @@ section{
    z-index: 2;
    box-sizing: border-box;
    text-align: center;
+ } */
+ /* .meal-details{
+   top: 50%;
+   left: 50%;
+   position: fixed;
+   padding: 2rem 0;
+   color: orange;
+   transform: translate(-50%, -50%);
+   width: 89%;
+   height: 89%;
+   display: none;
+   overflow-y: scroll;
+   background: black;
  }
- 
 
-
-
+ */
+#sub-title.Instructions {
+color: brown;
+}

@@ -7,7 +7,7 @@ let userBtn = document.getElementById('btn')
 let object = document.getElementById('object');
 
 
-findResult.addEventListener('click', getMeal);
+// findResult.addEventListener('click', getMeal);
 userBtn.addEventListener('click', () => {
     fetch(url)
     .then(resp => resp.json())
@@ -20,24 +20,33 @@ userBtn.addEventListener('click', () => {
                 <img src=${meal.strMealThumb} alt="">
                 <div class="item-container">
                     <h1 class="sub-title"> ${meal.strMeal}</h1>
-                    <a class="view-button" href="#">Get Recipe</a>
+                    <h1 id="sub-title"> Instructions:</h1>
+                    <h1 class="sub-title"> ${meal.strInstructions} </h1>
+                    <a class="view-button" href=${meal.strInstructions} target="_blank">Get Recipe</a>
                 </div>
-                <p class="object-data">${meal.idMeal}</p>
+                <p class="object-data"></p>
             </div>
             `
         })
         findResult.innerHTML = html;
+        let getRecipe = document.querySelector('.view-button')
+        getRecipe.addEventListener('click', () => {
+            let popButton = document.getElementById('popup-btn');
+            popButton.addEventListener('click', () => {
+                
+            })
+        })
         }
     })
            
          })
-            function getMeal(e){
-                e.preventDefault();
-                if(e.target.classList.contains('view-button')){
-                    let mealItem = e.target.parentElement;
-                    console.log(mealItem);
-                }
-            }
+            // function getMeal(e){
+            //     e.preventDefault();
+            //     if(e.target.classList.contains('view-button')){
+            //         let mealItem = e.target.parentElement;
+            //         console.log(mealItem);
+            //     }
+            // }
     
 
  
