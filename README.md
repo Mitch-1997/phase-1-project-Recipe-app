@@ -1,6 +1,6 @@
-Recipe App
+## Recipe App
 
-By Mitchell Ngetich
+## By Mitchell Ngetich
 
 ## Description
 This is a simple recipe app that allows users to view photos and recipes of particular food.
